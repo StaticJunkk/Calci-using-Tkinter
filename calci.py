@@ -20,14 +20,14 @@ def button_sum():
 	global current1
 	global math
 	math = "add"
-	current1 = int(b1.get())
+	current1 = float(b1.get())
 	b1.delete(0, END) 
 
 	 
 
 def button_equal():
     if(math == "add"):
-    	current2 = int(b1.get())
+    	current2 = float(b1.get())
     	b1.delete(0, END)
     	e1 = current1 + current2
     	b1.insert(0, str(e1))
@@ -35,7 +35,7 @@ def button_equal():
 	    
 	     
     if(math == "sub"):
-    	current2 = int(b1.get())
+    	current2 = float(b1.get())
     	b1.delete(0, END)
     	e1 = current1 - current2
     	b1.insert(0, str(e1))
@@ -43,7 +43,7 @@ def button_equal():
 	    
 	    
     if(math == "mult"):
-    	current2 = int(b1.get())
+    	current2 = float(b1.get())
     	b1.delete(0, END)
     	e1 = current1 * current2
     	b1.insert(0, str(e1))
@@ -51,7 +51,7 @@ def button_equal():
 	    
 	    
     if(math == "div"):
-    	current2 = int(b1.get())
+    	current2 = float(b1.get())
     	b1.delete(0, END)
     	e1 = current1/current2
     	b1.insert(0, str(e1))
@@ -64,19 +64,19 @@ def button_sub():
 	global current1
 	global math
 	math = "sub"
-	current1 = int(b1.get())
+	current1 = float(b1.get())
 	b1.delete(0, END) 
 def button_div():
 	global current1
 	global math
 	math = "div"
-	current1 = int(b1.get())
+	current1 = float(b1.get())
 	b1.delete(0, END) 
 def button_mult():
 	global current1
 	global math
 	math = "mult"
-	current1 = int(b1.get())
+	current1 = float(b1.get())
 	b1.delete(0, END) 
 
 
